@@ -1,12 +1,12 @@
 {
-  "name": "postcss-loader",
-  "version": "4.1.0",
+  "name": "@phated/postcss-loader",
+  "version": "4.2.0-phated.1",
   "description": "PostCSS loader for webpack",
   "license": "MIT",
-  "repository": "webpack-contrib/postcss-loader",
+  "repository": "phated/postcss-loader",
   "author": "Andrey Sitnik <andrey@sitnik.ru>",
-  "homepage": "https://github.com/webpack-contrib/postcss-loader",
-  "bugs": "https://github.com/webpack-contrib/postcss-loader/issues",
+  "homepage": "https://github.com/phated/postcss-loader",
+  "bugs": "https://github.com/phated/postcss-loader/issues",
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/webpack"
