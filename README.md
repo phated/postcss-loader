@@ -593,6 +593,36 @@ module.exports = {
 };
 ```
 
+### `customPostcss`
+
+Type: `Function`
+Default: `undefined`
+
+A custom `postcss` factory function for the loader to use. **This option is only really useful for downstream tooling authors to ease the PostCSS 7-to-8 transition.**
+
+**webpack.config.js**
+
+```js
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" },
+          {
+            loader: "postcss-loader",
+            options: { customPostcss: require("postcss") },
+          },
+          { loader: "sass-loader" },
+        ],
+      },
+    ],
+  },
+};
+```
+
 ## Examples
 
 ### SugarSS

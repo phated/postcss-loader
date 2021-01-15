@@ -1,7 +1,7 @@
 import { getOptions } from "loader-utils";
 import { validate } from "schema-utils";
 
-import postcss from "postcss";
+import ourPostcss from "postcss";
 import { satisfies } from "semver";
 import postcssPackage from "postcss/package.json";
 
@@ -45,6 +45,8 @@ export default async function loader(content, sourceMap, meta) {
     typeof options.postcssOptions.config === "undefined"
       ? true
       : options.postcssOptions.config;
+
+  const postcss = options.customPostcss || ourPostcss;
 
   let loadedConfig;
 

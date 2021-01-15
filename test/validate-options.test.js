@@ -50,6 +50,10 @@ describe("validate options", () => {
       success: [true, false],
       failure: [1, /test/, [], {}, "something"],
     },
+    customPostcss: {
+      success: [require("postcss")],
+      failure: [1, /test/, [], {}, "something"],
+    },
   };
 
   function stringifyValue(value) {

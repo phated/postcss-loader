@@ -1,5 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`validate options should throw an error on the "customPostcss" option with "/test/" value 1`] = `
+"Invalid options object. PostCSS Loader has been initialized using an options object that does not match the API schema.
+ - options.customPostcss should be an instance of function.
+   -> An explicit PostCSS function to use, instead of the locally installed version (https://github.com/postcss/postcss-loader#customPostcss)"
+`;
+
+exports[`validate options should throw an error on the "customPostcss" option with "[]" value 1`] = `
+"Invalid options object. PostCSS Loader has been initialized using an options object that does not match the API schema.
+ - options.customPostcss should be an instance of function.
+   -> An explicit PostCSS function to use, instead of the locally installed version (https://github.com/postcss/postcss-loader#customPostcss)"
+`;
+
+exports[`validate options should throw an error on the "customPostcss" option with "{}" value 1`] = `
+"Invalid options object. PostCSS Loader has been initialized using an options object that does not match the API schema.
+ - options.customPostcss should be an instance of function.
+   -> An explicit PostCSS function to use, instead of the locally installed version (https://github.com/postcss/postcss-loader#customPostcss)"
+`;
+
+exports[`validate options should throw an error on the "customPostcss" option with "1" value 1`] = `
+"Invalid options object. PostCSS Loader has been initialized using an options object that does not match the API schema.
+ - options.customPostcss should be an instance of function.
+   -> An explicit PostCSS function to use, instead of the locally installed version (https://github.com/postcss/postcss-loader#customPostcss)"
+`;
+
+exports[`validate options should throw an error on the "customPostcss" option with "something" value 1`] = `
+"Invalid options object. PostCSS Loader has been initialized using an options object that does not match the API schema.
+ - options.customPostcss should be an instance of function.
+   -> An explicit PostCSS function to use, instead of the locally installed version (https://github.com/postcss/postcss-loader#customPostcss)"
+`;
+
 exports[`validate options should throw an error on the "execute" option with "/test/" value 1`] = `
 "Invalid options object. PostCSS Loader has been initialized using an options object that does not match the API schema.
  - options.execute should be a boolean.
