@@ -593,12 +593,14 @@ module.exports = {
 };
 ```
 
-### `customPostcss`
+### `implementation`
 
 Type: `Function`
 Default: `undefined`
 
-A custom `postcss` factory function for the loader to use. **This option is only really useful for downstream tooling authors to ease the PostCSS 7-to-8 transition.**
+The special `implementation` option determines which implementation of PostCSS to use. Overrides the locally installed `peerDependency` version of `postcss`.
+
+**This option is only really useful for downstream tooling authors to ease the PostCSS 7-to-8 transition.**
 
 **webpack.config.js**
 
@@ -613,7 +615,7 @@ module.exports = {
           { loader: "css-loader" },
           {
             loader: "postcss-loader",
-            options: { customPostcss: require("postcss") },
+            options: { implementation: require("postcss") },
           },
           { loader: "sass-loader" },
         ],
