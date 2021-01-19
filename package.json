@@ -1,6 +1,6 @@
 {
   "name": "@phated/postcss-loader",
-  "version": "4.2.0-phated.1",
+  "version": "4.2.0-phated.2",
   "description": "PostCSS loader for webpack",
   "license": "MIT",
   "repository": "phated/postcss-loader",
