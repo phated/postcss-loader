@@ -46,7 +46,7 @@ export default async function loader(content, sourceMap, meta) {
       ? true
       : options.postcssOptions.config;
 
-  const postcss = options.customPostcss || ourPostcss;
+  const postcss = options.implementation || ourPostcss;
 
   let loadedConfig;
 

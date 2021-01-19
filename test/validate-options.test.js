@@ -50,7 +50,7 @@ describe("validate options", () => {
       success: [true, false],
       failure: [1, /test/, [], {}, "something"],
     },
-    customPostcss: {
+    implementation: {
       success: [require("postcss")],
       failure: [1, /test/, [], {}, "something"],
     },
